@@ -44,6 +44,16 @@ jQuery(document).ready(function($) {
               $(this).removeClass('active');
             }
           });
+
+          $('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+        
+            fixedContentPos: false
+          });
           
           
           // animate and scroll to the sectin 
